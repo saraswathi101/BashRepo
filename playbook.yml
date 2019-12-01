@@ -34,6 +34,12 @@
     - name: Provisioning EC2 instances
       block:
 
+      - name: Generating keypair
+        openssh_keypair:
+          path: ~/{{ key_name }}
+
+      tags: generate_keypair
+
       - name: Upload public key to AWS
         ec2_key:
           name: "{{ key_name }}"
