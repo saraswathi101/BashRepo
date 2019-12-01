@@ -6,8 +6,8 @@
 
   vars:
     key_name: my_aws
-    region: ap-south-1
-    image:  ami-016ec067d44808c4f # https://cloud-images.ubuntu.com/locator/ec2/
+    region: us-east-2
+    image:  ami-0faf98ec1c0e28a7e # https://cloud-images.ubuntu.com/locator/ec2/
     id: "web-app"
     sec_group: "{{ id }}-sec"
 
