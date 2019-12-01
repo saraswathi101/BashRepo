@@ -38,7 +38,7 @@
         openssh_keypair:
           path: ~/{{ key_name }}
 
-      tags: generate_keypair
+      tags: ['generate_keypair']
 
       - name: Upload public key to AWS
         ec2_key:
